@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arun Kumar — Industry 4.0 Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #f5f0e8; --bg2: #ede8df; --ink: #0d0d0d;
@@ -31,7 +31,8 @@ nav {
 .nav-logo { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); }
 .nav-logo em { color: var(--accent); font-style: normal; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
-.nav-links a { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.3s; }
+/* Changed color to black (#000000) and made it slightly bolder (600) so it looks good */
+.nav-links a { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #000000; text-decoration: none; transition: color 0.3s; }
 .nav-links a:hover { color: var(--accent); }
 .nav-cta { background: var(--ink); color: var(--bg); padding: 10px 22px; border-radius: 6px; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: all 0.3s; white-space: nowrap; }
 .nav-cta:hover { background: var(--accent); }
@@ -39,7 +40,8 @@ nav {
 .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.3s; }
 .nav-mobile { display: none; position: fixed; top: 61px; left: 0; right: 0; background: rgba(245,240,232,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 20px 24px; z-index: 499; flex-direction: column; gap: 16px; }
 .nav-mobile.open { display: flex; }
-.nav-mobile a { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 8px 0; border-bottom: 1px solid var(--border); }
+/* Changed mobile nav color to black (#000000) */
+.nav-mobile a { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #000000; text-decoration: none; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .nav-mobile a:last-child { border-bottom: none; }
 .nav-mobile a:hover { color: var(--accent); }
 
@@ -172,12 +174,12 @@ h2 { font-family: 'Clash Display', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2
 .cc-value { font-family: 'Clash Display', sans-serif; font-size: 1rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
 
 /* ── FOOTER ── */
-footer { background: var(--ink); padding: 28px 60px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-.footer-copy { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: rgba(255,255,255,0.3); letter-spacing: 0.1em; }
-.footer-copy em { color: rgba(255,255,255,0.6); font-style: normal; }
+footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 28px 60px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-copy { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.1em; }
+.footer-copy em { color: #000000; font-style: normal; font-weight: bold; }
 .footer-nav { display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-nav a { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: rgba(255,255,255,0.3); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s; }
-.footer-nav a:hover { color: rgba(255,255,255,0.8); }
+.footer-nav a { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; font-weight: 600; color: #000000; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s; }
+.footer-nav a:hover { color: var(--accent); }
 
 /* ── REVEAL ── */
 .reveal { opacity: 0; transform: translateY(32px); transition: all 0.9s cubic-bezier(0.16,1,0.3,1); }
